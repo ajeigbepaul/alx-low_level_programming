@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
-* main - using main function
+* main - print the string in put function
 *
-* Description: using the main function 
-* write a C program that prints the size of various types on the computer it is compiled and run on
-* Return 0
+* Description: Using the main function
+* the program print "programming is like printing a multiligual puzzle
+* Return: 0
 */
 int main(void)
 {
