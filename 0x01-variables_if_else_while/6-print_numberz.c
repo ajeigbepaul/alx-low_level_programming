@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
  * main - print the digit of number from 0 to 10
  *
@@ -13,6 +15,6 @@ int main(void)
 
 	for (i = 0; i <= 9; i++)
 		putchar(i);
-	putchar("\n");
+		putchar("\n");
 	return (0);
 }
