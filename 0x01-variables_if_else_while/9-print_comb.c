@@ -2,7 +2,8 @@
 /**
  * main - print all possible combination
  *
- * Description: Write a program that prints all possible combinations of single-digit numbers.
+ * Description: Write a program that prints all 
+ * possible combinations of single-digit numbers.
  * Return: 0
  *
 */
@@ -10,11 +11,11 @@ int main(void)
 {
 	int c;
 	
-	for (c = 48; c <= 57; c++)
+	for (c = '0'; c <= '9'; c++)
 		putchar(c);
-		if (c != 57)
+		if (c != '9')
 			putchar(',');
 			putchar(' ');
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
