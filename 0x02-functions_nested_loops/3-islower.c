@@ -1,11 +1,14 @@
 #include "main.h"
 /**
- * main - Checks for lower character
+ * _islower - Checks for lower character
  *
- * Description: A function that checks for lower character
+ * @c: A function that checks for lower character
  * Return: 1 and 0
 */
 int _islower(int c)
 {
-	return (c >= 'a' && c <= 'z');
+	if (c >= 'a' && c <= 'z')
+		return (1);
+	else
+		return (0);
 }
