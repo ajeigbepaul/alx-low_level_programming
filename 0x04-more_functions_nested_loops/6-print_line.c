@@ -1,10 +1,11 @@
+#include <stdio.h>
 #include "main.h"
-/**
- * print_line - print a straight line
- * @n: parameter
- * Return: return nothing
-*/
 
+/**
+ * print_line - prints a straight line
+ * @n: parameter
+ * Return: returns nothing
+*/
 void print_line(int n)
 {
 	while (n-- > 0)
@@ -13,4 +14,3 @@ void print_line(int n)
 	}
 	putchar('\n');
 }
-
