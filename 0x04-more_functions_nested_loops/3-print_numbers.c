@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "main.h"
-#include "_putchar.c"
+
 /**
  * print_numbers - Print from 0 to 9
  *
