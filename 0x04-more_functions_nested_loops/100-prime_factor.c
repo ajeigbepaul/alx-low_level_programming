@@ -7,22 +7,19 @@
 */
 int main(void)
 {
-	long number = 612852475143;
-	int inc;
+	unsigned long num = 612852475143;
+	unsigned long divisor = 2;
 
-	while (inc++ < number / 2)
+	while (divisor < num)
 	{
-	if (number % inc == 0)
-	{
-		number /= 2;
-		continue;
+		if (num % divisor == 0)
+		{
+			num /= divisor;
+			divisor = 2;
+		}
+		else
+			divisor++;
 	}
-	for (inc = 3; inc < number / 2; inc += 2)
-	{
-		if (number % inc == 0)
-			number /= inc;
-	}
-	}
-	printf("%1d\n", number);
+	printf("%lu\n", num);
 	return (0);
 }
