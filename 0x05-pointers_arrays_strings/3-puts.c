@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _put - print a string
+ * _puts - print a string
  * @str: string to print
  *
  * Description: prints a string
