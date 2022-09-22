@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * leet - Encode a string 
+ * leet - Encode a string
  * @s: The string to be encoded.
  *
  * Return: A pointer to the encoded string
@@ -24,3 +24,4 @@ char *leet(char *s)
 		}
 	}
 	return (s);
+}
