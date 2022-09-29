@@ -1,5 +1,7 @@
 #include "main.h"
 
+int actual_prime(int n, int i);
+
 /**
  * is_prime_number - return the 1 if n is prime.
  * @n: The number to be checked.
@@ -8,30 +10,29 @@
  */
 int is_prime_number(int n)
 {
-	int start = n / 2;
-
 	if (n <= 1)
 	{
 		return (0);
 	}
-	return (is_prime(n, start));
+	return (actual_prime(n, n - 1));
 }
+
 /**
- * is_prime - returns the 1 if n is prime
+ * actual_prime - returns the 1 if n is prime
  * @n: number to be checked
- * @start: number to start checking from
+ * @i: number to start checking from
  *
  * Return: 1 if n is prime, 0 otherwise
  */
-int is_prime(int n, int start)
+int actual_prime(int n, int i)
 {
-	if (start <= 1)
+	if (i == 1)
 	{
 		return (1);
 	}
-	else if (n % start == 0)
+	if (n % i == 0 && i > 0)
 	{
 		return (0);
 	}
-	return (is_prime(n, start - 1));
+	return (actual_prime(n, i - 1));
 }
