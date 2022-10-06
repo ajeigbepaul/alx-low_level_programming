@@ -1,13 +1,13 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * string_noconcat - concatenate s1 and an bytes of s2
+ * string_nconcat - concatenate s1 and an bytes of s2
  * @s1: string 1
  * @s2: string 2
  * @n: n bytes to concat from string 2
  * Return: pointer to concatenated string
  */
-char *string_noconcat(char *s1, char *s2, unsigned int n)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int i, j, k;
 	char *s;
