@@ -6,7 +6,7 @@
  * @head: A pointer the head of the list_t
  * @str: The string to be added to the list_t
  *
- * Return: if the function fail - NULL
+ * Return: If the function fail - NULL
  * otherwise - the address of the elemennt
  */
 list_t *add_node_end(list_t **head, const char *str)
@@ -18,6 +18,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	new = malloc(sizeof(list_t));
 	if (new == NULL)
 		return (NULL);
+
 	dup = strdup(str);
 	if (str == NULL)
 	{
@@ -27,12 +28,14 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	for (len = 0; str[len];)
 		len++;
+
 	new->str = dup;
 	new->len = len;
 	new->next = NULL;
 
 	if (*head == NULL)
 		*head = new;
+
 	else
 	{
 		last = *head;
@@ -40,6 +43,7 @@ list_t *add_node_end(list_t **head, const char *str)
 			last = last->next;
 		last->next = new;
 	}
+
 	return (*head);
 }
 
